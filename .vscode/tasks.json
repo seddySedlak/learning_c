@@ -1,0 +1,27 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      // jen zkompiluje testy (pouziva F5 pred debugem)
+      "label": "build tests",
+      "type": "shell",
+      "command": "make -C ${fileDirname} tests.out",
+      "problemMatcher": {
+        "base": "$gcc",
+        "fileLocation": ["relative", "${fileDirname}"]
+      },
+      "group": "build"
+    },
+    {
+      // zkompiluje a spusti testy (Ctrl+Shift+B)
+      "label": "run tests",
+      "type": "shell",
+      "command": "make -C ${fileDirname}",
+      "problemMatcher": {
+        "base": "$gcc",
+        "fileLocation": ["relative", "${fileDirname}"]
+      },
+      "group": { "kind": "build", "isDefault": true }
+    }
+  ]
+}

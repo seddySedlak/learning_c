@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      // debug testu aktualni ulohy (F5)
+      "name": "Debug testu",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${fileDirname}/tests.out",
+      "cwd": "${fileDirname}",
+      "MIMode": "gdb",
+      "preLaunchTask": "build tests"
+    }
+  ]
+}
