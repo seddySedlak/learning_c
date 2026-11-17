@@ -16,61 +16,52 @@ static void test_grains_on_square_1(void)
 
 static void test_grains_on_square_2(void)
 {
-   TEST_IGNORE();   // delete this line to run test
    TEST_ASSERT_EQUAL_UINT64(2ull, square(2));
 }
 
 static void test_grains_on_square_3(void)
 {
-   TEST_IGNORE();
    TEST_ASSERT_EQUAL_UINT64(4ull, square(3));
 }
 
 static void test_grains_on_square_4(void)
 {
-   TEST_IGNORE();
    TEST_ASSERT_EQUAL_UINT64(8ull, square(4));
 }
 
 static void test_grains_on_square_16(void)
 {
-   TEST_IGNORE();
    TEST_ASSERT_EQUAL_UINT64(32768ull, square(16));
 }
 
 static void test_grains_on_square_32(void)
 {
-   TEST_IGNORE();
    TEST_ASSERT_EQUAL_UINT64(2147483648ull, square(32));
 }
 
 static void test_grains_on_square_64(void)
 {
-   TEST_IGNORE();
+
    TEST_ASSERT_EQUAL_UINT64(9223372036854775808ull, square(64));
 }
 
 static void test_square_0_is_invalid(void)
 {
-   TEST_IGNORE();
    TEST_ASSERT_EQUAL_UINT64(0, square(0));
 }
 
 static void test_negative_square_is_invalid(void)
 {
-   TEST_IGNORE();
    TEST_ASSERT_EQUAL_UINT64(0, square(-1));
 }
 
 static void test_square_greater_than_64_is_invalid(void)
 {
-   TEST_IGNORE();
    TEST_ASSERT_EQUAL_UINT64(0, square(65));
 }
 
 static void test_returns_the_total_number_of_grains_on_the_board(void)
 {
-   TEST_IGNORE();
    TEST_ASSERT_EQUAL_UINT64(18446744073709551615ull, total());
 }
 
